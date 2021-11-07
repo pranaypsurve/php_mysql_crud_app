@@ -59,7 +59,6 @@ if (isset($_GET['delete'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,7 +67,6 @@ if (isset($_GET['delete'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
     <section class="form-section">
         <div class="container">
@@ -77,14 +75,14 @@ if (isset($_GET['delete'])) {
                     <h3>PHP Crud App 2021</h3>
                 </div>
                 <div class="col-lg-6 m-auto">
-                        <?php if (isset($_SESSION['message'])) { ?>
-                            <div class="alert alert-primary" role="alert">
+                    <?php if (isset($_SESSION['message'])) { ?>
+                        <div class="alert alert-primary" role="alert">
                             <?php
-                                echo $_SESSION['message'];
-                                unset($_SESSION['message']); ?>
-                                </div>
-                        <?php } ?>
-                        
+                            echo $_SESSION['message'];
+                            unset($_SESSION['message']); ?>
+                        </div>
+                    <?php } ?>
+
                     <form action="" method="post">
                         <div class="form-group">
                             <label for="">First Name</label>
@@ -147,5 +145,4 @@ if (isset($_GET['delete'])) {
         </div>
     </section>
 </body>
-
 </html>
